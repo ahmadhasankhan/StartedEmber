@@ -19,7 +19,7 @@ First of all install the Node
 * `sudo apt-get install npm` 
 
 
-Then Run
+After installing Node, verify that Node is set up correctly by typing the following commands on the command line. Both should output help messages:
 
 ```
 $ node -v
@@ -37,7 +37,11 @@ sudo apt-get update
 sudo apt-get install nodejs
 
 sudo apt-get update
-sudo apt-get install build-essential libssl-dev
+sudo apt-get install -y \
+git \
+build-essential \
+curl \
+wget
 ```
 
 
@@ -119,6 +123,29 @@ To set a default Node version to be used in any new shell, use the alias 'defaul
 
     nvm alias default 0.10
 
+###Ember CLI
+
+Once you’ve installed Node, you’ll need to install the Ember CLI globally with:
+
+`npm install -g ember-cli`
+
+This will give you access to the ember command-line runner.
+
+
+###Bower
+
+You’ll need to install Bower, a package manager that keeps your front-end dependencies (including JQuery, Ember, and QUnit) up to date. This is as easy as running:
+
+`npm install -g bower`
+
+This will give you access to the bower command-line runner.
+
+
+###PhantomJS
+
+By default, your integration tests will run on PhantomJS. You can install via npm:
+
+`npm install -g phantomjs`
 
 
 
