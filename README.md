@@ -148,16 +148,66 @@ By default, your integration tests will run on PhantomJS. You can install via np
 `npm install -g phantomjs`
 
 
+###Create a new project
+
+Run the generator for your project:
+`ember new my-new-app`
+
+This will create a new my-new-app folder and generate an application structure for you.
+
+Once the generation process finishes, launch the app:
+```
+cd my-new-app
+ember server
+```
+
+navigate to http://localhost:4200 to see your new app in action.
+
+navigate to http://localhost:4200/tests to see your test results in action.
+
+
+###Cloning an existing project
 
 * `git clone https://github.com/ahmadhasankhan/StartedEmber.git` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
 
+###Upgrading an Ember CLI App
+
+Use NPM to update to the latest released version of Ember CLI.
+`npm install --save-dev ember-cli`
+
+When you update to the latest version you may need to re-install files from the app blueprint and update Node NPM dependencies.
+`ember init`
+
+This will re-copy files from the project blueprint. You can choose to overwrite existing files or not. It will subsequently call npm install to update any changed dependencies.
+
 ## Running / Development
 
 * `ember server`
 * Visit your app at http://localhost:4200.
+
+###Stylesheets
+
+Ember CLI supports plain CSS out of the box. You can add your css styles to app/styles/app.css and it will be served at assets/application-name.css
+For example, to add bootstrap in your project you need to do the following:
+
+```
+bower install --save-dev bootstrap
+            OR
+bower install bootstrap --save
+```
+
+
+In Brocfile.js add the following:
+
+```
+app.import('bower_components/bootstrap/dist/css/bootstrap.css');
+app.import('bower_components/bootstrap/dist/js/bootstrap.js');
+```
+it’s going to tell Broccoli that we want this file to be concatenated with our vendor.css file.
+
 
 ### Code Generators
 
