@@ -15,7 +15,7 @@ You will need the following things properly installed on your computer.
 
 First of all install the Node
 
-* `sudo apt-get install nodejs`
+* `sudo apt-get install node`
 * `sudo apt-get install npm` 
 
 
