@@ -13,7 +13,27 @@ You will need the following things properly installed on your computer.
 
 ## Installation
 
-* `git clone <repository-url>` this repository
+First of all install the Node
+
+* `sudo apt-get install nodejs`
+
+Then Run
+
+* `node -v`
+
+```
+*node -v
+
+v0.11.11
+
+*npm -v
+
+1.3.25
+
+```
+
+
+* `git clone <https://github.com/ahmadhasankhan/StartedEmber.git>` this repository
 * change into the new directory
 * `npm install`
 * `bower install`
