@@ -16,10 +16,10 @@ You will need the following things properly installed on your computer.
 First of all install the Node
 
 * `sudo apt-get install nodejs`
+* `sudo apt-get install npm` 
+
 
 Then Run
-
-* `node -v`
 
 ```
 $ node -v
@@ -31,6 +31,15 @@ $ npm -v
 1.3.25
 
 ```
+
+```
+sudo apt-get update
+sudo apt-get install nodejs
+
+sudo apt-get update
+sudo apt-get install build-essential libssl-dev
+```
+
 
 ### NVM Install script
 
