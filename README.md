@@ -61,13 +61,6 @@ You can customize the install source, directory and profile using the `NVM_SOURC
 
 <sub>*NB. The installer can use Git, curl, or wget to download NVM, whatever is available.*</sub>
 
-### Manual install
-
-For manual install create a folder somewhere in your filesystem with the `nvm.sh` file inside it.  I put mine in a folder called `nvm`.
-
-Or if you have `git` installed, then just clone it:
-
-    git clone https://github.com/creationix/nvm.git ~/.nvm
 
 To activate nvm, you need to source it from your shell:
 
