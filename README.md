@@ -165,6 +165,9 @@ navigate to http://localhost:4200/tests to see your test results in action.
 * change into the new directory
 * `npm install`
 * `bower install`
+* `npm install broccoli-merge-trees`
+* `npm install broccoli-static-compiler`
+
 
 ###Upgrading an Ember CLI App
 
